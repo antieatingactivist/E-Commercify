@@ -75,7 +75,7 @@ DELETE can be used to delete an element.
 * [mySQL](https://www.mysql.com)
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [node.js](https://nodejs.dev) 
-* [inquirer](https://github.com/SBoudrias/Inquirer.js)
+* [sequelize](https://sequelize.org)
 
 
 
