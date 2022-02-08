@@ -31,6 +31,7 @@ DB_PW=password
 ## [Watch the demo video](https://antieatingactivist.github.io/Workplace-Tracker/)
 
 
+<img width="993" alt="Screen Shot 2022-02-07 at 7 06 53 PM" src="https://user-images.githubusercontent.com/1414728/152910543-64455abd-a58a-428b-a835-8cb878e1467e.png">
 
 
 ## Installation
