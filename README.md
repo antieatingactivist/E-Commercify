@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-This is an app for ...
+This is an app for storing and accessing information in a database for e-commerce. Products, Tags, and Categories are accessed, added, and modified using RESTful API methods.
 
 
 
@@ -59,7 +59,14 @@ node.js and mySQL are required to run this application. mySQL username "root" an
 
 `npm start`
 
+## Usage
 
+navigate to http://localhost:3001/api/products/ to view the products in the database.
+you can do the same with .../api/categories and .../api/tags. Similarly you can view individual elements by accessing .../api/products/(id).
+
+POST method can be used to create a new Tag, Product, or Category.
+PUT can be used to modify an existing element.
+DELETE can be used to delete an element.
 
 
 ## Built With
