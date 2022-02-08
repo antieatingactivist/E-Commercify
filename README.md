@@ -10,15 +10,22 @@ This is an app for ...
 
 ##
 
-- .
+- Express Router is user to modularize API routes and Sequelize is used to access the MySQL database.
 
 ```
+router.get('/:id', async (req, res) => {
+  const productData = await Product.findByPk(req.params.id, {
+    include: [{ model: Category}, {model: Tag}]
+  });
+  res.json(productData);
+});
+```
+- dotenv is used to obfuscate database login data.
 
 ```
-- .
-
-```
-
+DB_NAME=ecommerce_db
+DB_USER=root
+DB_PW=password
 ```
 
 ## [Watch the demo video](https://antieatingactivist.github.io/Workplace-Tracker/)
@@ -38,11 +45,13 @@ node.js and mySQL are required to run this application. mySQL username "root" an
 
 `npm install`
 
+- edit the .env.EXAMPLE file and rename it to .env. If you are using a mySQL username other than root and a password other than 'password' you will need to change the .env file accordingly.
+
 - add schema to mySQL database
 
-`npm run schema`
+`mysql -u root -p < ./db/schema.sql`
 
-- optionally seed the database with data for testing purposes
+- seed the database
 
 `npm run seed`
 
